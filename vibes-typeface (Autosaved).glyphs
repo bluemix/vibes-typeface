@@ -3284,6 +3284,7 @@ width = 126;
 }
 );
 unicode = 0632;
+changeCount = 1;
 },
 {
 glyphname = "zain-ar.fina";
@@ -3324,6 +3325,7 @@ width = 126;
 }
 );
 unicode = 0698;
+changeCount = 1;
 },
 {
 glyphname = "jeh-ar.fina";
@@ -10283,7 +10285,7 @@ layers = (
 {
 backgroundImage = {
 crop = "{{0, 0}, {389, 192}}";
-imagePath = "../Downloads/Screen Shot 2019-04-23 at 11.32.55.png";
+imagePath = "/Users/bluemix/Glyphs-projects/Downloads/Screen Shot 2019-04-23 at 11.32.55.png";
 locked = "1";
 transform = "{4.43709, 0, 0, 4.43709, -27, -200}";
 };
@@ -10299,7 +10301,7 @@ layers = (
 {
 backgroundImage = {
 crop = "{{0, 0}, {806, 191}}";
-imagePath = "../Downloads/Screen Shot 2019-04-23 at 11.31.12.png";
+imagePath = "/Users/bluemix/Glyphs-projects/Downloads/Screen Shot 2019-04-23 at 11.31.12.png";
 locked = "1";
 transform = "{3.85866, 0, 0, 3.85866, -167, -126}";
 };
@@ -10315,7 +10317,7 @@ layers = (
 {
 backgroundImage = {
 crop = "{{0, 0}, {898, 448}}";
-imagePath = "../Downloads/Screen Shot 2019-04-23 at 11.29.44.png";
+imagePath = "/Users/bluemix/Glyphs-projects/Downloads/Screen Shot 2019-04-23 at 11.29.44.png";
 locked = "1";
 transform = "{1.86674, 0, 0, 1.86674, 0, -70}";
 };
@@ -10331,7 +10333,7 @@ layers = (
 {
 backgroundImage = {
 crop = "{{0, 0}, {1077, 308}}";
-imagePath = "../Downloads/Screen Shot 2019-04-22 at 13.02.36.png";
+imagePath = "/Users/bluemix/Glyphs-projects/Downloads/Screen Shot 2019-04-22 at 13.02.36.png";
 locked = "1";
 transform = "{2.94868, -0.03135, 0.03135, 2.94868, 52, -236}";
 };
