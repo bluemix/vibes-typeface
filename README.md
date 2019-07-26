@@ -8,7 +8,7 @@
 This is my first-ever typeface designed from [Arabic Typogoraphy Course](http://arabictype.com/courses/course-spring-2019/).
 It was designed to be used for titles.
 
-### [Download](vibes-typeface.glyphs)
+### [Download](https://raw.githubusercontent.com/bluemix/vibes-typeface/master/vibes-typeface.glyphs)
 
 <br><br>
 ## Samples
