@@ -1,10 +1,9 @@
 {
 .appVersion = "1230";
 DisplayStrings = (
-"/divisionslash",
-""
+"/ain-ar/yeh-ar/dal-ar  /alefHamzaabove-ar/dad-ar/hah-ar/alefMaksura-ar  /meem-ar/beh-ar/alef-ar/reh-ar/kaf-ar \012 /waw-ar/alef-ar/hah-ar/dal-ar  /meem-ar/noon-ar  /alefHamzaabove-ar/seen-ar/waw-ar/hamza-ar  /alef-ar/lam-ar/khah-ar/tah-ar/waw-ar/tah-ar \012 /alef-ar/lam-ar/lam-ar/yeh-ar  /seen-ar/waw-ar/yeh-ar/teh-ar/heh-ar/alef-ar  /comma-ar  /beh-ar/seen-ar  /yeh-ar/lam-ar/alef-ar/alef-ar/alef-ar/alef-ar/alef-ar/alef-ar"
 );
-copyright = "Copyright 2019 AbdElmomen Kadhim (https://github.com/bluemix/vibes-typeface)";
+copyright = "Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)";
 customParameters = (
 {
 name = note;
@@ -87,6 +86,10 @@ value = 477;
 {
 name = openTypeOS2SuperscriptYSize;
 value = 650;
+},
+{
+name = flags;
+value = header;
 }
 );
 date = "2019-04-23 10:26:53 +0000";
@@ -310,7 +313,7 @@ fontMaster = (
 alignmentZones = (
 "{0, 38}"
 );
-ascender = 860;
+ascender = 1105;
 capHeight = 38;
 custom = Normal;
 descender = -680;
@@ -11974,21 +11977,6 @@ glyphname = CARRIAGE;
 layers = (
 {
 layerId = "BA82AF6A-5289-49F9-B535-AE40A2A15B95";
-paths = (
-{
-closed = 1;
-nodes = (
-"294 217 OFFCURVE",
-"225 76 OFFCURVE",
-"56 -130 CURVE",
-"86 -154 LINE",
-"258 56 OFFCURVE",
-"330 203 OFFCURVE",
-"391 462 CURVE",
-"353 470 LINE"
-);
-}
-);
 width = 400;
 }
 );
@@ -16833,5 +16821,5 @@ arBar = "40";
 };
 };
 versionMajor = 1;
-versionMinor = 0;
+versionMinor = 100;
 }

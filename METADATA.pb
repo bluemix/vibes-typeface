@@ -10,7 +10,7 @@ fonts {
   filename: "Vibes-Regular.ttf"
   post_script_name: "Vibes-Regular"
   full_name: "Vibes Regular"
-  copyright: "Copyright 2019 AbdElmomen Kadhim  (https://github.com/bluemix/vibes-typeface)"
+  copyright: "Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)"
 }
 subsets: "arabic"
 subsets: "latin"

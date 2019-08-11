@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.7.9
+Fontbakery version: 0.7.10
 
 <details>
 <summary><b>[27] Family checks</b></summary>
@@ -9,8 +9,7 @@ Fontbakery version: 0.7.9
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
 * ℹ **INFO** fontbakery (0.7.10)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.9
-  LATEST:    0.7.10
+  INSTALLED: 0.7.10 (latest)
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -200,52 +199,27 @@ Fontbakery version: 0.7.9
 <br>
 </details>
 <details>
-<summary><b>[132] Vibes-Regular.ttf</b></summary>
+<summary><b>[131] Vibes-Regular.ttf</b></summary>
 <details>
 <summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in METADATA.pb</summary>
 
 * [com.google.fonts/check/metadata/valid_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_copyright)
-* 🔥 **FAIL** METADATA.pb: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2019 AbdElmomen Kadhim  (https://github.com/bluemix/vibes-typeface)'
+* 🔥 **FAIL** METADATA.pb: Copyright notices should match a pattern similar to:
+ "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
 
 </details>
 <details>
 <summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts</summary>
 
 * [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/bluemix/vibes-typeface)'
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: 'Copyright 2017 The Familyname Project Authors (git url)'
-But instead we have got: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/bluemix/vibes-typeface)'
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
-
-* [com.google.fonts/check/metadata/nameid/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/copyright)
-* 🔥 **FAIL** Copyright field for this font on METADATA.pb ('Copyright 2019 AbdElmomen Kadhim  (https://github.com/bluemix/vibes-typeface)') differs from a copyright notice entry on the name table: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/bluemix/vibes-typeface)'
-* 🔥 **FAIL** Copyright field for this font on METADATA.pb ('Copyright 2019 AbdElmomen Kadhim  (https://github.com/bluemix/vibes-typeface)') differs from a copyright notice entry on the name table: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/bluemix/vibes-typeface)'
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into and integer value.
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
-
-* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
-* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 1105, but got 860 instead [code: ascent]
-
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Whitespace glyphs have ink?</summary>
-
-* [com.google.fonts/check/whitespace_ink](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_ink)
-* 🔥 **FAIL** Glyph "CARRIAGE" has ink. It needs to be replaced by an empty glyph.
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
 
 </details>
 <details>
@@ -259,14 +233,14 @@ But instead we have got: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/b
 <summary>⚠ <b>WARN:</b> METADATA.pb: Fontfamily is listed on Google Fonts API?</summary>
 
 * [com.google.fonts/check/metadata/listed_on_gfonts](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/listed_on_gfonts)
-* ⚠ **WARN** Family not found via Google Fonts API.
+* ⚠ **WARN** Family not found via Google Fonts API. [code: not-found]
 
 </details>
 <details>
 <summary>⚠ <b>WARN:</b> Stricter unitsPerEm criteria for Google Fonts. </summary>
 
 * [com.google.fonts/check/unitsperem_strict](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/unitsperem_strict)
-* ⚠ **WARN** Even though unitsPerEm (1000) in this font is reasonable. It is strongly advised to consider changing it to 2000, since it will likely improve the quality of Variable Fonts by avoiding excessive rounding of coordinates on interpolations.
+* ⚠ **WARN** Even though unitsPerEm (1000) in this font is reasonable. It is strongly advised to consider changing it to 2000, since it will likely improve the quality of Variable Fonts by avoiding excessive rounding of coordinates on interpolations. [code: legacy-value]
 
 </details>
 <details>
@@ -277,7 +251,6 @@ But instead we have got: 'Copyright 2019 AbdElmomen Kadhim (https://github.com/b
 
 The following glyphs do not have the recommended number of contours:
 
-Glyph name: CARRIAGE	Contours detected: 1	Expected: 0
 Glyph name: uni2215	Contours detected: 2	Expected: 1
 Glyph name: quoteleft	Contours detected: 0	Expected: 1
 Glyph name: quoteright	Contours detected: 0	Expected: 1
@@ -292,7 +265,7 @@ Glyph name: guillemotleft	Contours detected: 0	Expected: 2
 Glyph name: guillemotright	Contours detected: 0	Expected: 2
 Glyph name: germandbls	Contours detected: 2	Expected: 1
 Glyph name: fraction	Contours detected: 0	Expected: 1
-Glyph name: lozenge	Contours detected: 0	Expected: 2
+Glyph name: lozenge	Contours detected: 0	Expected: 2 [code: contour-count]
 
 </details>
 <details>
@@ -355,8 +328,8 @@ Glyph name: lozenge	Contours detected: 0	Expected: 2
 <summary>💤 <b>SKIP:</b> Font has ttfautohint params? </summary>
 
 * [com.google.fonts/check/has_ttfautohint_params](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/has_ttfautohint_params)
-* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint.
-* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint.
+* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
+* 💤 **SKIP** Font appears to our heuristic as not hinted using ttfautohint. [code: not-hinted]
 
 </details>
 <details>
@@ -556,57 +529,57 @@ Glyph name: lozenge	Contours detected: 0	Expected: 2
 
 |  | Vibes-Regular.ttf |
 |:--- | ---:|
-| Dehinted Size | 54.9kb |
+| Dehinted Size | 54.8kb |
 | Hinted Size | 76.6kb |
 | Increase | 21.7kb |
 | Change   | 39.6 % |
-
+ [code: size-impact]
 
 </details>
 <details>
 <summary>ℹ <b>INFO:</b> Font has old ttfautohint applied?</summary>
 
 * [com.google.fonts/check/old_ttfautohint](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/old_ttfautohint)
-* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.000', 'Version 1.000']
+* ℹ **INFO** Could not detect which version of ttfautohint was used in this font. It is typically specified as a comment in the font version entries of the 'name' table. Such font version strings are currently: ['Version 1.100', 'Version 1.100'] [code: version-not-detected]
 
 </details>
 <details>
 <summary>ℹ <b>INFO:</b> EPAR table present in font?</summary>
 
 * [com.google.fonts/check/epar](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/epar)
-* ℹ **INFO** EPAR table not present in font. To learn more see https://github.com/googlefonts/fontbakery/issues/818
+* ℹ **INFO** EPAR table not present in font. To learn more see https://github.com/googlefonts/fontbakery/issues/818 [code: lacks-EPAR]
 
 </details>
 <details>
-<summary>ℹ <b>INFO:</b> Is 'gasp' table set to optimize rendering?</summary>
+<summary>ℹ <b>INFO:</b> Is the Grid-fitting and Scan-conversion Procedure ('gasp') table set to optimize rendering?</summary>
 
 * [com.google.fonts/check/gasp](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/gasp)
 * ℹ **INFO** These are the ppm ranges declared on the gasp table:
 
 PPM <= 65535:
 	flag = 0x0F
-	- Use gridfitting
+	- Use grid-fitting
 	- Use grayscale rendering
 	- Use gridfitting with ClearType symmetric smoothing
 	- Use smoothing along multiple axes with ClearType®
-
-* 🍞 **PASS** 'gasp' table is correctly set, with one gaspRange:value of 0xFFFF:0x0F.
+ [code: ranges]
+* 🍞 **PASS** The 'gasp' table is correctly set, with one gaspRange:value of 0xFFFF:0x0F.
 
 </details>
 <details>
 <summary>ℹ <b>INFO:</b> Check for font-v versioning </summary>
 
 * [com.google.fonts/check/fontv](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/fontv)
-* ℹ **INFO** Version string is: "Version 1.000"
-The version string must ideally include a git commit hash and either a 'dev' or a 'release' suffix such as in the example below:
-"Version 1.3; git-0d08353-release"
+* ℹ **INFO** Version string is: "Version 1.100"
+The version string must ideally include a git commit hash and either a "dev" or a "release" suffix such as in the example below:
+"Version 1.3; git-0d08353-release" [code: bad-format]
 
 </details>
 <details>
 <summary>ℹ <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/required_tables](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/required_tables)
-* ℹ **INFO** This font contains the following optional tables [fpgm, GSUB, DSIG, GPOS, gasp, prep, loca, cvt ]
+* ℹ **INFO** This font contains the following optional tables [loca, DSIG, gasp, GPOS, GSUB, fpgm, cvt , prep]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -735,8 +708,8 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>🍞 <b>PASS:</b> METADATA.pb font.full_name field contains font name in right format?</summary>
 
 * [com.google.fonts/check/metadata/valid_full_name_values](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_full_name_values)
-* 🍞 **PASS** METADATA.pb font.full_name field contains font name in right format. ('Vibes' in 'Vibes Regular')
-* 🍞 **PASS** METADATA.pb font.full_name field contains font name in right format. ('Vibes' in 'Vibes Regular')
+* 🍞 **PASS** METADATA.pb font.full_name field contains font name in right format. ("Vibes" in "Vibes Regular")
+* 🍞 **PASS** METADATA.pb font.full_name field contains font name in right format. ("Vibes" in "Vibes Regular")
 
 </details>
 <details>
@@ -766,13 +739,6 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/metadata/copyright_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/copyright_max_length)
 * 🍞 **PASS** Copyright notice string is shorter than 500 chars.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> METADATA.pb: Filename is set canonically?</summary>
-
-* [com.google.fonts/check/metadata/canonical_filename](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/canonical_filename)
-* 🍞 **PASS** Filename in METADATA.pb is set canonically.
 
 </details>
 <details>
@@ -844,7 +810,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>🍞 <b>PASS:</b> Checking post.italicAngle value.</summary>
 
 * [com.google.fonts/check/italic_angle](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/italic_angle)
-* 🍞 **PASS** Value of post.italicAngle is 0.0 with style='Regular'.
+* 🍞 **PASS** Value of post.italicAngle is 0.0 with style="Regular".
 
 </details>
 <details>
@@ -853,6 +819,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 * [com.google.fonts/check/mac_style](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mac_style)
 * 🍞 **PASS** head macStyle ITALIC bit is properly set.
 * 🍞 **PASS** head macStyle BOLD bit is properly set.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Copyright field for this font on METADATA.pb matches all copyright notice entries on the name table ?</summary>
+
+* [com.google.fonts/check/metadata/nameid/copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/nameid/copyright)
+* 🍞 **PASS** Copyright field for this font on METADATA.pb matches copyright notice entries on the name table.
 
 </details>
 <details>
@@ -866,7 +839,7 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 <summary>🍞 <b>PASS:</b> Check name table: FONT_FAMILY_NAME entries. </summary>
 
 * [com.google.fonts/check/name/familyname](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/familyname)
-* 🍞 **PASS** FONT_FAMILY_NAME entries are all good.
+* 🍞 **PASS** FONT_FAMILY_NAME entries are all good. [code: ok]
 
 </details>
 <details>
@@ -940,6 +913,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 </details>
 <details>
+<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
+
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+* 🍞 **PASS** OK
+
+</details>
+<details>
 <summary>🍞 <b>PASS:</b> Combined length of family and style must not exceed 27 characters.</summary>
 
 * [com.google.fonts/check/name/family_and_style_max_length](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length)
@@ -951,6 +931,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/name/trailing_spaces](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/name/trailing_spaces)
 * 🍞 **PASS** No trailing spaces on name table entries.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Checking OS/2 usWinAscent & usWinDescent.</summary>
+
+* [com.google.fonts/check/family/win_ascent_and_descent](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent)
+* 🍞 **PASS** OS/2 usWinAscent & usWinDescent values look good!
 
 </details>
 <details>
@@ -986,6 +973,13 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 * [com.google.fonts/check/whitespace_glyphnames](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames)
 * 🍞 **PASS** Font has **proper** whitespace glyph names.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Whitespace glyphs have ink?</summary>
+
+* [com.google.fonts/check/whitespace_ink](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_ink)
+* 🍞 **PASS** There is no whitespace glyph with ink.
 
 </details>
 <details>
@@ -1184,5 +1178,5 @@ The version string must ideally include a git commit hash and either a 'dev' or 
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 6 | 6 | 36 | 7 | 104 |
-| 0% | 4% | 4% | 23% | 4% | 65% |
+| 0 | 2 | 6 | 36 | 7 | 107 |
+| 0% | 1% | 4% | 23% | 4% | 68% |
