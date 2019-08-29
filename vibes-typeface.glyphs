@@ -1,9 +1,9 @@
 {
 .appVersion = "1230";
 DisplayStrings = (
-"/ain-ar/yeh-ar/dal-ar  /alefHamzaabove-ar/dad-ar/hah-ar/alefMaksura-ar  /meem-ar/beh-ar/alef-ar/reh-ar/kaf-ar \012 /waw-ar/alef-ar/hah-ar/dal-ar  /meem-ar/noon-ar  /alefHamzaabove-ar/seen-ar/waw-ar/hamza-ar  /alef-ar/lam-ar/khah-ar/tah-ar/waw-ar/tah-ar \012 /alef-ar/lam-ar/lam-ar/yeh-ar  /seen-ar/waw-ar/yeh-ar/teh-ar/heh-ar/alef-ar  /comma-ar  /beh-ar/seen-ar  /yeh-ar/lam-ar/alef-ar/alef-ar/alef-ar/alef-ar/alef-ar/alef-ar"
+"/alefHamzaabove-ar/heh-ar/lam-ar/alef-ar/fathatan-ar  /waw-ar/seen-ar/heh-ar/lam-ar/alef-ar/fathatan-ar  /beh-ar/kaf-ar/meem-ar  /alefHamzaabove-ar/ain-ar/zain-ar/alef-ar/yehHamzaabove-ar/yeh-ar \012Welcome, dears"
 );
-copyright = "Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)";
+copyright = "Copyright 2019 The Vibes Project Authors (https://github.com/bluemix/vibes-typeface)";
 customParameters = (
 {
 name = note;

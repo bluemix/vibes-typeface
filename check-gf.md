@@ -8,8 +8,9 @@ Fontbakery version: 0.7.10
 <summary>ℹ <b>INFO:</b> Do we have the latest version of FontBakery installed?</summary>
 
 * [com.google.fonts/check/fontbakery_version](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/fontbakery_version)
-* ℹ **INFO** fontbakery (0.7.10)  - Well designed Font QA tool, written in Python 3
-  INSTALLED: 0.7.10 (latest)
+* ℹ **INFO** fontbakery (0.7.11)  - Well designed Font QA tool, written in Python 3
+  INSTALLED: 0.7.10
+  LATEST:    0.7.11
 
 * 🍞 **PASS** Font Bakery is up-to-date
 
@@ -201,25 +202,16 @@ Fontbakery version: 0.7.10
 <details>
 <summary><b>[131] Vibes-Regular.ttf</b></summary>
 <details>
-<summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in METADATA.pb</summary>
+<summary>🔥 <b>FAIL:</b> PPEM must be an integer on hinted fonts.</summary>
 
-* [com.google.fonts/check/metadata/valid_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_copyright)
-* 🔥 **FAIL** METADATA.pb: Copyright notices should match a pattern similar to:
- "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
+* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
+* 🔥 **FAIL** This is a hinted font, so it must have bit 3 set on the flags of the head table, so that PPEM values will be rounded into an integer value.
 
-</details>
-<details>
-<summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts</summary>
+This can be accomplished by using the 'gftools fix-hinting' command.
 
-* [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
-* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
-But instead we have got:
-"Copyright 2019 AbdElmomen Kadhim (blueMix) (https://github.com/bluemix/vibes-typeface)" [code: bad-notice-format]
+# create virtualenvpython3 -m venv venv
+# activate virtualenvsource venv/bin/activate
+# install gftoolspip install git+https://www.github.com/googlefonts/tools [code: bad-flags]
 
 </details>
 <details>
@@ -579,7 +571,7 @@ The version string must ideally include a git commit hash and either a "dev" or 
 <summary>ℹ <b>INFO:</b> Font contains all required tables?</summary>
 
 * [com.google.fonts/check/required_tables](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/universal.html#com.google.fonts/check/required_tables)
-* ℹ **INFO** This font contains the following optional tables [loca, DSIG, gasp, GPOS, GSUB, fpgm, cvt , prep]
+* ℹ **INFO** This font contains the following optional tables [DSIG, GPOS, cvt , loca, GSUB, gasp, prep, fpgm]
 * 🍞 **PASS** Font contains all required tables.
 
 </details>
@@ -725,6 +717,22 @@ The version string must ideally include a git commit hash and either a "dev" or 
 * [com.google.fonts/check/metadata/valid_post_script_name_values](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_post_script_name_values)
 * 🍞 **PASS** METADATA.pb postScriptName field contains font name in right format.
 * 🍞 **PASS** METADATA.pb postScriptName field contains font name in right format.
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Copyright notices match canonical pattern in METADATA.pb</summary>
+
+* [com.google.fonts/check/metadata/valid_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/metadata/valid_copyright)
+* 🍞 **PASS** METADATA.pb copyright string is good
+
+</details>
+<details>
+<summary>🍞 <b>PASS:</b> Copyright notices match canonical pattern in fonts</summary>
+
+* [com.google.fonts/check/font_copyright](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright)
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Vibes Project Authors (https://github.com/bluemix/vibes-typeface)' matches canonical pattern.
+* 🍞 **PASS** Name Table entry: Copyright field 'Copyright 2019 The Vibes Project Authors (https://github.com/bluemix/vibes-typeface)' matches canonical pattern.
+* 🍞 **PASS** Name table copyright entries are good
 
 </details>
 <details>
@@ -910,13 +918,6 @@ The version string must ideally include a git commit hash and either a "dev" or 
 
 * [com.google.fonts/check/aat](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/aat)
 * 🍞 **PASS** There are no unwanted AAT tables.
-
-</details>
-<details>
-<summary>🍞 <b>PASS:</b> PPEM must be an integer on hinted fonts.</summary>
-
-* [com.google.fonts/check/integer_ppem_if_hinted](https://font-bakery.readthedocs.io/en/latest/fontbakery/profiles/googlefonts.html#com.google.fonts/check/integer_ppem_if_hinted)
-* 🍞 **PASS** OK
 
 </details>
 <details>
@@ -1178,5 +1179,5 @@ The version string must ideally include a git commit hash and either a "dev" or 
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS |
 |:-----:|:----:|:----:|:----:|:----:|:----:|
-| 0 | 2 | 6 | 36 | 7 | 107 |
+| 0 | 1 | 6 | 36 | 7 | 108 |
 | 0% | 1% | 4% | 23% | 4% | 68% |
